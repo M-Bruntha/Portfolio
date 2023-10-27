@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bruntha - Portfolio</title>
+        <style>
+           body {
+               font-family: Arial,sans-serif;
+               margin: 0;
+               padding: 0;
+               background-color: #f0f0f0;
+           }
+           
+           header {
+               background-color: #a80000;
+               color: #fff;
+               text-align: center;
+               padding: 2rem 0;
+               position: relative;
+           }
+           
+           .header-content h1 {
+               font-size: 2.5rem;
+           }
+
+           
+           nav {
+               background-color: #a80000;
+               color: #fff;
+               text-align: center;
+           }
+           
+           nav u1 {
+               list-style-type: none;
+               padding: 0;
+           }
+           
+           nav u1 li {
+               display:inline;
+               margin: 0 20px;
+           }
+           
+           nav u1 li a {
+               text-decoration: none;
+               color: #fff;
+           }
+
+           nav u1 li a:hover{
+               color: black;
+               background-color: powderblue;
+           }
+           
+           .section-content {
+               background-color: #fff;
+               padding: 2rem;
+               margin: 1rem;
+               border-radius: 20px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           }
+           
+           .download-button {
+               background-color: blue;
+               color: #fff;
+               padding: 0.5rem 1rem;
+               text-decoration: none;
+               border-radius: 20px;
+               display: inline-block;
+               margin-top: 10px;
+           }
+           
+           .download-button:hover {
+               background-color: powderblue;
+               color:black;
+           }
+           
+           footer {
+               text-align: center;
+               padding: 1rem 0;
+               background-color: #a80000;
+               color: #fff;
+           }
+           
+           u1 {
+               list-style-type: disc;
+               padding-left: 20px;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+             <h1>M.BRUNTHA</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <u1>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills<a></li>
+                <li><a href="#contact">Contact<a></li>
+                <li><a href="#resume">Resume<a></li>
+            </u1>
+        </nav>
+        
+        <section id="about">
+          <div class="section-content">
+          <h2>Myself</h2> 
+          <h4>Hai Everyone! 
+              I am M.Bruntha</h4> 
+          <p>I am a final year student and i am currently pursuing B.Sc.Computer Science in Dr.URCW.</p>
+           </div> 
+        </section>
+        
+        <section id="education">
+           <div class="section-content">
+           <h2>My Education</h2>
+           <h4>B.Sc.Computer Science</h4>
+           <p>Dr.URCW-Alagappa University</p>
+        </div>
+        </section>
+        
+        <section id="skills">
+           <div class="section-content">
+           <h2>Skills</h2>
+           <h4>My Technical Skills</h4>
+               <li>Framework : ASP DotNet</li>
+               <li>Software : MS-Office</li>
+               <li>Operating System : Windows</li>
+           </div>
+           </section>
+           
+           <section id="contact">
+           <div class="section-content">
+           <h2>My Contact Details</h2>
+           <p>Name     : M.Bruntha</p> 
+           <p>Phone no : 8825820383</p>
+           <p>Email id : bruntha21urcwcs@gmail.com</p>  
+           </div>   
+           </section>
+
+           <section id="resume">
+            <div class="section-content">
+            <h2>RESUME</h2>
+            <a href="resume.pdf" class="download-button">Download</a>
+            </div>   
+            </section>
+           
+           <footer>
+               <p>&copy; 2023@Bruntha</p>
+           </footer>
+           
+           <script>
+               document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                   anchor.addEventListener('click',function(e) {
+                       e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if(targetElement){
+    window.scrollTo({
+      top:targetElement.offsetTop, 
+      behavior:'smooth'
+      });
+    }
+ });
+});
+          </script>
+    </body>
+    </html>
